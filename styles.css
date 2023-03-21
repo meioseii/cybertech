@@ -140,6 +140,7 @@ body {
     justify-content: center;
     gap: 36px;
     width: 48rem;
+    font-size: 1em;
 }
 
 .mission {
