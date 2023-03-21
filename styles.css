@@ -90,11 +90,58 @@ body {
     transition: 0.7s;
 }
 
+/* ---------------PROFILE--------------- */
+
+.profile--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: em;
+    height: 100vh;
+}
+
+.clients,
+.suppliers,
+.financial--institutions,
+.testimonies {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+    margin: 1em;
+    text-align: center;
+}
+
+.client,
+.supplier,
+.financial--institution,
+ {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
 /* ---------------ABOUT US--------------- */
 
 .about-us--header {
     font-size: 2em;
     padding: 1rem 2rem;
+}
+
+.clients--header,
+.suppliers--header,
+.financial--institutions--header,
+.testimonies--header {
+    padding: 1rem 2rem;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.clients--desc, 
+.suppliers--desc,
+.financial--institutions--desc,
+.testimonies--desc {
+    text-align: center;
+    width: 48em;
 }
 
 /* ---------------HISTORY--------------- */
