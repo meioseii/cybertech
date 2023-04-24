@@ -20,6 +20,95 @@ body {
     /* background-image: linear-gradient(to bottom, white, rgb(44, 44, 44)); */
 }
 
+/* ---------------LOGIN--------------- */
+
+.login--body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("./images/bg-img.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #14213d;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+    width: 400px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e5e5e5;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    display: block; 
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #e5e5e5;
+}
+
+.form-input {
+    text-shadow: none; 
+    color: #222222;
+    width: 95%; padding: 10px; 
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px; 
+    background-color: #f2f2f2;
+}
+
+.form-input:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 5px #FCA311;
+}
+
+.forgot-pass {
+    cursor: pointer;
+    font-size: 12px;
+    color: #e5e5e5;
+    font-weight: bold;
+    margin-bottom: 20px;
+    transition: 0.6s ease-in-out;
+}
+
+.forgot-pass:hover {
+    color: #FCA311;
+}
+
+.form-button {
+    text-shadow: none; 
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #FCA311;
+    color: #14213d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+}
+
+.form-button:hover {
+    background-color: #ED820E;
+}
+
 /* ---------------HOME--------------- */
 
 .home--container {
