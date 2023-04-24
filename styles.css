@@ -3,7 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    border: px solid black;
+    border: px solid red;
     font-family: 'Karla', sans-serif;
     color: #f3f3f3;
     text-shadow: 2px 2px #222222;
@@ -32,7 +32,12 @@ body {
 }
 
 .home--container h3 {
+    color: #FCA311;
     font-size: 60px;
+}
+
+.home--container h4 {
+    font-size: 20px;
 }
 
 .home--container button {
@@ -44,7 +49,7 @@ body {
     border-radius: 15px;
     border-color: #f3f3f3;
     background-color: transparent;
-    transition: 0.7s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 .home--container button:hover {
