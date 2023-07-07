@@ -95,7 +95,8 @@ body button:active {
     width: 32px;
 }
 
-.navbar--links #cart-items {
+.navbar--links #cart-items,
+.navbar--links li {
     list-style-type: none;
     font-weight: 700;
     font-size: 1em;
@@ -107,12 +108,12 @@ body button:active {
     transition: 0.4s ease-in-out;
 }
 
-.navbar--links #cart-items:hover {
+.navbar--links #cart-items:hover,
+.navbar--links li:hover {
     cursor: pointer;
     color: #FCA311;
     transform: scale(1.1);
 }
-
 
 /* ---------------PRODUCTS--------------- */
 

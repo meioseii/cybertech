@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./images/favicon.png">
+    <title>Home</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar--logo">
+            <img class="company--logo" src="./images/icon.png" alt="">
+            <div onClick="window.location.href='admin.html'" class="company--name">CyberTech</div>
+        </div>
+        <ul class="navbar--links">
+            <li onClick="window.location.href='login.html'" class="login">Logout</li>
+        </ul>
+
+    </div>
+
+    <div class="admin-buttons-container">
+        <h1>Hi Admin!</h1>
+    
+        <div class="entry-buttons">
+            <div class="new-entry">
+                <h1>Submit Entries</h1>
+                <button class="new-entry-button" onclick="window.location.href='./accounting/CYB_ACCOUNTING.html'">Accounting</button>
+                <button class="new-entry-button" onclick="window.location.href='./human_resource/form_HRD.html'">Human Resource</button>
+                <button class="new-entry-button" onclick="window.location.href='./marketing/cyb_mkt_new.html'">Marketing</button>
+                <button class="new-entry-button" onclick="window.location.href='./payroll/payrollfront.html'">Payroll</button>
+                <button class="new-entry-button" onclick="window.location.href='./supply_chain/INBOUND/inbound_cyb.html'">Supply Chain (Inbound)</button>
+                <button class="new-entry-button" onclick="window.location.href='./supply_chain/OUTBOUND/outbound_cyb.html'">Supply Chain (Outbound)</button>
+            </div>
+        
+            <div class="vertical-line"></div>
+        
+            <div class="view-entry">
+                <h1>View Entries</h1>
+                <button class="view-entry-button" onclick="window.location.href='./accounting/View_Accounting.php'">Accounting</button>
+                <button class="view-entry-button" onclick="window.location.href='./human_resource/view_HRD.php'">Human Resource</button>
+                <button class="view-entry-button" onclick="window.location.href='./marketing/output_view.php'">Marketing</button>
+                <button class="view-entry-button" onclick="window.location.href='./payroll/view_payroll.php'">Payroll</button>
+                <button class="view-entry-button" onclick="window.location.href='./supply_chain/INBOUND/view_inbound.php'">Supply Chain (Inbound)</button>
+                <button class="view-entry-button" onclick="window.location.href='./supply_chain/OUTBOUND/view_outbound.php'">Supply Chain (Outbound)</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

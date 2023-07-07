@@ -1,0 +1,62 @@
+<html>
+
+<head>
+
+	<title>HTML Form with Table</title>
+	<link rel="stylesheet" type="text/css" href=" inventory.css">
+	
+</head>
+<body>
+  
+  <div class="bgimg_remove">
+	<form class="form-container" action="result_inventory.php" method="POST">
+	  
+	  <h2 class="form-header"> ADD ITEM </h2>
+		<br>
+		
+		<label class="form-label"> Classification : </label>
+		<select class="form-input" id="classification" name="classification"
+		onchange="updateBrand()">
+		  <option value="none">--Select Classification here--</option>
+			<option value="Motherboard">Motherboard</option>
+			<option value="Processor">Processor</option>
+			<option value="RAM">RAM</option>
+		</select>
+		<br>
+     
+		<label class="form-label"> Brand : </label>
+		<select class="form-input" id="brand" name="brand" onchange="updateItem()">
+		  <option value="none">--Select Product first--</option>
+		</select>
+
+		<label class="form-label"> Item Name : </label>
+		<select class="form-input" id="itemName" name="itemName">
+		  <option value="none">--Select Brand first--</option>
+		</select>
+	<br>
+	
+		<label class="form-label"> Units : </label>
+		<select class="form-input" id="units" name="units">
+			<option value="pc">pc</option>
+		</select>
+		<br>
+		
+		<label class="form-label"> Stocks : </label>
+		<input type="number" name="stocks" id="stocks" class="form-input" placeholder="Enter Stocks here . . .">
+		<br>
+		  
+		<label class="form-label"> Item Cost : </label>
+		<input type="number" name="itemCost" id="itemCost" class="form-input" placeholder="Enter Cost here . . . " required>
+		<br>
+	  
+	  <input type="submit" class="form-button" id="submit" name="submit" value="Submit">
+	  
+	  </form>
+	 
+	</div>
+	  
+	    <script src="inventory.js"> </script>
+
+</body>
+</html>
+

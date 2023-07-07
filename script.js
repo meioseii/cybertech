@@ -15,28 +15,22 @@ buttons.forEach(button => {
     button.addEventListener('click', () => {
     switch(selectValue) {
         case 'Accounting':
-            window.location.href = 'about.html';
+            window.location.href = './accounting/CYB_ACCOUNTING.html';
             break;
-        case 'Client':
-            window.location.href = 'profile.html';
+        case 'Admin':
+            window.location.href = 'admin.html';
             break;
-        case 'Information Technology':
-            window.location.href = 'faqs.html';
-            break;
-        case 'Supply Chain Management (Inbound)':
-            window.location.href = 'index.html';
-            break;
-        case 'Supply Chain Management (Outbound)':
-            window.location.href = 'profile.html';
+        case 'Supply Chain Management':
+            window.location.href = './supply_chain/index.html';
             break;
         case 'Human Resource':
             window.location.href = '';
             break;
         case 'Marketing':
-            window.location.href = '';
+            window.location.href = './marketing/cyb_mkt_new.html';
             break;
         case 'Payroll':
-            window.location.href = '';
+            window.location.href = './payroll/payrollfront.html';
             break;
     }
 })

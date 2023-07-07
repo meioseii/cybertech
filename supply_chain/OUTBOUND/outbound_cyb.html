@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+	<title>Supply Outbound Form</title>
+	<link rel="stylesheet" type="text/css" href=" outbound.css">
+	
+</head>
+<body>
+  
+  <div class="bgimg_remove">
+	<form class="form-container" action="result_outbound.php" method="POST">
+	  
+	  <h2 class="form-header">Outbound Transaction</h2>
+		<br>
+		
+		<label class="form-label">Shipment ID : </label>
+		<input type="number" id="shipmentID" name="shipmentID" class="form-input" placeholder="Enter ID here . . ." required>
+		<br>
+		
+		<label class="form-label">Product : </label>
+		<select class="form-input" id="productTp" name="productTp" onchange="updateItems()">
+		  <option value="none">--Select a Product Here--</option>
+			<option value="Motherboard">Motherboard</option>
+			<option value="Processor">Processor</option>
+			<option value="RAM">RAM</option>
+		</select>
+		<br>
+    
+		<label class="form-label"> Item Name: </label>
+		<select class="form-input" name="productname" id="productname">
+		  <option value="none">
+		    --Go Select a Product first--
+		  </option>
+		</select>
+		<br>
+
+		<label class="form-label"> Quantity : </label>
+		<input type="number" name="quantity" id="quantity" class="form-input" placeholder="Enter Quantity here . . . ">
+	  <br>
+	
+		<label class="form-label"> Customer Name : </label>
+		<input type="text" name="customerName" id="customerName" class="form-input" placeholder="Enter Customer Name here . . ." required>
+		<br>
+		
+		<label class="form-label"> Transport Mode : </label>
+		<select class="form-input" id="transMode" name="transMode">
+			<option value="Air">Air</option>
+			<option value="Sea">Sea</option>
+			<option value="Road">Road</option>
+		</select>
+		<br>
+		
+		<label class="form-label"> Destination : </label>
+		<input type="text" name="destination" id="destination" class="form-input" placeholder="Enter Address here . . ." required>
+		<br>
+		
+		<label class="form-label"> Delivery Date : </label>
+		<input type="date" name="deliveryDate" id="deliveryDate" class="form-input">
+		<br>
+		
+		<label for="Notes" class="form-label">Notes :</label>
+    <textarea name="notes" id="notes" required> </textarea>
+    
+	  
+	  <input type="submit" class="form-button" id="submit" name="submit" value="Submit">
+	  
+	  </form>
+	 
+	</div>
+	  
+	    <script src="outbound.js"> </script>
+
+</body>
+</html>

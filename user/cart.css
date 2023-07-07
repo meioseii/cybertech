@@ -95,7 +95,8 @@ body .add-to-cart:active {
     width: 32px;
 }
 
-.navbar--links #cart-items {
+.navbar--links #cart-items,
+.navbar--links li {
     list-style-type: none;
     font-weight: 700;
     font-size: 1em;
@@ -107,7 +108,8 @@ body .add-to-cart:active {
     transition: 0.4s ease-in-out;
 }
 
-.navbar--links #cart-items:hover {
+.navbar--links #cart-items:hover,
+.navbar--links li:hover {
     cursor: pointer;
     color: #FCA311;
     transform: scale(1.1);
@@ -118,7 +120,6 @@ body .add-to-cart:active {
 .checkout-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
     padding: 24px;
     min-width: 80%;
 }
@@ -195,6 +196,7 @@ hr {
     align-items: center;
     justify-content: flex-end;
     gap: 32px;
+    margin-top: auto;
 }
 
 .checkout-button-container span {

@@ -158,7 +158,9 @@ select option {
     font-size: 20px;
 }
 
-.home--container button {
+.home--container button,
+.new-entry button,
+.view-entry button {
     width: 200px;
     height: 50px;
     color: #f3f3f3;
@@ -170,7 +172,9 @@ select option {
     transition: 0.4s ease-in-out;
 }
 
-.home--container button:hover {
+.home--container button:hover,
+.new-entry button:hover,
+.view-entry button:hover {
     cursor: pointer;
     border-color: #FCA311;
     color: #14213d;
@@ -194,6 +198,42 @@ select option {
 }
 .home--text {
     font-family: 'Orbitron', sans-serif;
+}
+
+.admin-buttons-container {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.admin-buttons-container h1 {
+    font-size: 64px;
+
+    text-align: center;
+}
+.entry-buttons {
+    display: flex;
+}
+
+.vertical-line {
+    border-left: 2px solid #e5e5e5;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.new-entry,
+.view-entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.new-entry h1,
+.view-entry h1 {
+    font-size: 16px;
 }
 
 /* ---------------NAVBAR--------------- */
@@ -238,6 +278,7 @@ select option {
     gap: 32px;
     margin: 0;
     cursor: pointer;
+    margin-right: 16px;
 }
 
 .navbar--links li {

@@ -1,0 +1,244 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("bg-img.jpg");
+  background-size: cover;
+  padding: 24px;
+}
+
+title{
+  color: white;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  div class {
+    align:center;
+  }
+
+  option{
+    align:center;
+  }
+
+  h1{
+    color:white;
+    margin-bottom: 20px;
+  } 
+
+  h2 {
+    margin-top: 15px;
+    font-weight: bold;
+  }
+
+  h3{
+    color: white;
+  }
+
+  select [id="modeofpayment"]{
+    width: 225px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+    input[type="number"]
+      {
+      display: block;
+      width: 230px;
+      padding: 10px;
+      border: 2px solid black;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      font-size: 12px;
+      box-sizing: border-box;
+    } 
+  input[type="submit"]
+    {
+      margin-top: 20px;
+      display: block;
+      width: 100%;
+      padding: 10px 20px;
+      background-color: #FCA311;
+      color: #14213d;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover
+    {
+      background-color: #fca311;
+    }
+    input[type="submit"]:active 
+    {
+      background-color: #fca311;
+    }
+      input[type="submit"]:focus
+    {
+      outline: none;
+    }
+    .int-samplegroup {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .int-samplegroup label {
+        flex: 1;
+        margin-right: 20px;
+      }
+
+      .int-samplegroup input {
+        flex: 2;
+      }
+
+      .net-income {
+        font-weight: bold;
+        font-size: 24px;
+        margin-top: 40px;
+      }
+
+      h2
+      {
+        text-align: center;
+      }
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    border: 0;
+}
+
+.form-container { 
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #14213d;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+}
+
+.form-header {
+    margin-bottom: 20px;
+}
+
+.form-header {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #e5e5e5;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.form-label {
+    display: block; 
+    margin-bottom: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #e5e5e5;
+}
+
+
+.form-input { 
+    width: 95%; padding: 10px; 
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px; 
+    background-color: #f2f2f2;
+}
+
+.form-input:focus {
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 5px #FCA311;
+}
+
+
+.forgot-pass {
+    cursor: pointer;
+    font-size: 13px;
+    color: #e5e5e5;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.forgot-pass:hover {
+    color: #FCA311;
+    transition: 0.3s ease-in-out;
+}
+
+.form-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label{
+  color: white;
+}
+
+th{
+  color: white;
+}
+
+tr{
+  color: white;
+}
+
+.receipt-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+
+.receipt-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+.receipt-item {
+  margin-bottom: 5px;
+}
+
+
+.employee-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.employee-details {
+  margin-bottom: 20px;
+}
+
+
+.salary-deductions {
+  margin-bottom: 20px;
+}
+
+
+.bonuses {
+  margin-bottom: 20px;
+}
+
+
+.net-pay {
+  font-weight: bold;
+  font-size: 16px;
+}
