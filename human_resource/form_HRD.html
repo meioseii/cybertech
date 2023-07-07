@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Resource</title>
+  
+    <link rel="stylesheet" type="text/css" href="HRD.css">
+
+</head>
+<body>
+  
+    <form class="base" action="result_HRD.php" method="post">
+        <h1 class="info">Human Resource</h1> 
+        <label for="surname">Surname:</label><br>
+        <input required type="text" placeholder="Enter your surname" name="surname" id="surname"><br><br>
+
+    <label for="firstname">Firstname:</label><br>
+    <input required type="text" placeholder="Enter your firstname" name="firstname" id="firstname"><br><br>
+
+    <label for="middlename">Middlename:</label><br>
+    <input required type="text" placeholder="Enter your middlename" name="middlename" id="middlename"><br><br>
+
+    <label for="birthday">Birthday:</label><br>
+    <input required type="date" placeholder="Enter your birthday" name="birthday" id="birthday"><br><br>
+
+    <label for="birthplace">Birthplace:</label><br>
+    <input required type="text" placeholder="Enter your birthplace" name="birthplace" id="birthplace"><br><br>
+
+    <label for="gender">Gender:</label><br>
+    <select class="form-input" id="gender" name="gender">
+			<option value="Male">Male</option>
+			<option value="Female">Female</option>
+			<option value="Other">Other</option>
+		</select>
+		
+
+    <label for="contact">Contact:</label><br>
+    <input required type="text" placeholder="Enter your contact number" name="contact" id="contact"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input required type="email" placeholder="Enter your email" name="email" id="email"><br><br>
+
+    <label for="socialmedia">Social Media:</label><br>
+    <input required type="text" placeholder="Enter your Facebook" name="socialMedia" id="socialMedia"><br><br>
+
+    <label for="civiltsatus">Civil Status:</label><br>
+    <select class="form-input" id="civilStatus" name="civilStatus">
+			<option value="Married">Married</option>
+			<option value="Single">Single</option>
+			<option value="Other">Other</option>
+		</select>
+		<br>
+
+    <label for="educbackground">Educational Background:</label><br>
+    <input required type="text" placeholder="Enter your graduate school" name="educBackground" id="educBackground"><br><br>
+
+    <label for="educationattainment">Education Attainment:</label><br>
+    <input required type="text" placeholder="Enter your awards achievements" name="educAttainment" id="educAttainment"><br><br>
+
+    <label for="language">Known Language:</label><br>
+    <input required type="text" placeholder="Spoken language" name="language" id="language"><br><br>
+
+    <label for="religion">Religion:</label><br>
+    <input required type="text" placeholder="Are you Christian, Muslim, etc." name="religion" id="religion"><br><br>
+
+    <label for="jobexperience">Job Experience:</label><br>
+    <input required type="text" placeholder="Do you have work experience" name="jobExperience" id="jobExperience"><br><br>
+
+    <label for="homeaddress">Home Address:</label><br>
+    <input required type="text" placeholder="Current home location"  name="homeAddress" id="homeAddress"><br><br>
+
+    <input required type="submit" name="submit" id="submit">
+    
+    
+</form>
+</body>
+</html>
