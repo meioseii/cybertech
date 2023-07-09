@@ -1,7 +1,11 @@
-
+const logout = document.getElementById('logout');
 const addToCartButtons = document.querySelectorAll('.add-to-cart');
 const cartItems = document.querySelector('#cart-items');
 let cartItemsCount = 0;
+
+logout.addEventListener('click', () => {
+    confirm('Are you sure you want to logout?') ? window.location.href= '../index.html' : null;
+})
 
 window.addEventListener('load', () => {
     cartItemsCount = parseInt(localStorage.getItem("cartItemsCount")) || 0;
