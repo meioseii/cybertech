@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CyberTech Payroll System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Inbound Transaction Form</title>
+  <link rel="stylesheet" href="cyb_pyr_style.css">
+</head>
+<body>
+  <form class="form-container" action="cyb_pyr_result.php" method="POST"> 
+    <center><h1>Payroll</h1>
+
+    <h3 align="center" style="color: white;">Payroll Information</h3>
+    <tr>
+
+      <td>
+        <div class="int-samplegroup">
+          <label for="employee-name">Employee Name:</label>
+          <input type="text" id="employee-name" name="employee-name" placeholder="Employee Name" required>
+        </div>
+      </td>
+
+      <td>
+        <div class="int-samplegroup">
+          <label for="hours-worked">Employee No:</label>
+          <input type="number" id="employeeno" name="employeeno" placeholder="Employee No." required>
+        </div>
+      </td>
+
+      <td>
+        <div class="int-samplegroup">
+          <label for="department">Department:</label>
+          <select id="department" name="department" required>
+            <option value="HRM Department">HRM Department</option>
+            <option value="Journalism and Media Studies Department">Journalist and Media Studies Department</option>
+            <option value="Computer Science Department">Computer Science Department</option>
+            <option value="Supply Chain Management">Supply Chain Management</option>
+          </select>
+        </div>
+      </td>
+    
+      <td>
+        <label for="mode_of_payment">Mode of Payment:</label>
+        <select id="mode_of_payment" name="mode_of_payment" required>
+          <option value="Cash">Cash</option>
+          <option value="Bank Transfer">Bank Transfer</option>
+          <option value="GCASH Wallet">GCASH Wallet</option>
+        </select>
+      </td>
+    </tr>
+
+    <tr>
+      <h3>INCOME DEDUCTIONS:</h3>
+      <td>
+        <label for="daily_salary">Daily Salary:</label>
+        <input type="text" id="dailysalary" name="dailysalary" placeholder="Enter Daily-Salary" required>
+      </td>
+      <td>
+        <label for="form-label">SSS Contribution:</label>
+        <input type="text" id="sss_contribution" name="sss_contribution" placeholder="Enter SSS Contribution" required>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="form-label">Days Worked:</label>
+        <input type="text" id="daysworked" name="daysworked" placeholder="Enter Work Days" required>
+      </td>
+      <td>
+        <label for="philhealth">PhilHealth Contribution:</label>
+        <input type="text" id="philhealth" name="philhealth" placeholder="Enter Cont." required>
+      </td>
+    </tr>
+
+    <td>
+      <label for="form-label">No. of OT Hours:</label>
+      <input type="text" id="noofothours" name="noofothours"  placeholder="Enter OT-Hours" required>
+    </td>
+    <td>
+      <label for="pag-ibig">Pagibig Contribution:</label>
+      <input type="text" id="pagibig" name="pagibig" placeholder="Enter Cont." required>
+    </td>
+  </tr>
+
+    <td>
+      <label for="br1">Christmas Bonus:</label>
+        <input type="text" id="br1" name="br1"placeholder="Amount">
+        <label for="br2">13th Month Pay:</label>
+        <input type="text" id="br2" name="br2"placeholder="Amount">
+        <label for="br3">Holiday Pay:</label>
+        <input type="text" id="br3" name="br3"placeholder="Amount">
+      </select>
+    </td>
+
+    <td>
+      <label for="damagetoolsfee">Damage Tools Fee:</label>
+      <input type="text" id="damagetoolsfee" name="damagetoolsfee" placeholder="Enter Fees">
+        
+      <label for="cashadvance">Cash Advance:</label>
+      <input type="text" id="cashadvance" name="cashadvance" placeholder="Enter Cash Amount">
+    </td>
+  </tr>
+ 
+    <td>
+      <label for="grosspay">Gross pay:</label>
+      <input type="text" id="grosspay" name="grosspay" placeholder="Input Amount">
+
+      <label for="netpay">Net Pay:</label>
+      <input type="text" id="netpay" name="netpay" placeholder="Input Amount">
+    </td>
+</table>
+</center>
+    <input type="submit" value="Submit" class="form-button" value="Calculate And Print A Receipt">
+    <br>
+</div>
+</form>
+</body>
+</html>

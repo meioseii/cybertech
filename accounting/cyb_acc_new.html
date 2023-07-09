@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Accounting</title>
+	<link rel="stylesheet" type="text/css" href="cyb_acc_style.css">
+</head>
+<body>
+  
+	<form class="form-container" action="cyb_acc_result.php" method="post">
+	  
+		<h1 class="form-header">Accounting<br> <br> <br>
+		                    Accounts Receivable
+		                       </h1>
+		                       
+		<label class="form-label" for="income">Type of Income</label>
+		<select class="form-input" id="income" name="income">
+			<option value="sales">Sales</option>
+			<option value="stocks">Stocks</option>
+		</select>
+		
+		<label class="form-label" for="payment">Type of Payment</label>
+		<select class="form-input" id="payment" name="payment">
+			<option value="E-wallet">E-wallet</option>
+			<option value="Other">Other</option>
+		</select>
+		
+		<label class="form-label" for="amount">Amount Received</label>
+		<input required class="form-input" type="number" id="amount" name="amount">
+		
+		<label class="form-label" for="paydate">Payment Date</label>
+			<input required class="form-input" type="date" id="paydate" name="paydate">
+			
+		<label class="form-label" for="fullname">Customer Name</label>
+		<input required class="form-input" type="text" id="fullname" name="fullname">
+		
+		<label class="form-label" for="transdate">Transaction Date</label>
+		<input required class="form-input" type="date" id="transdate" name="transdate">
+		
+	<br> <br>
+	
+		<h2 class="form-header">Accounts Payable</h2>
+		
+		<label class="form-label" for="taxAmount">Amount of Tax</label>
+		<input required class="form-input" type="number" id="taxAmount" name="taxAmount">
+		
+		<label class="form-label" for="loanAmount">Amount of Loan</label>
+		<input required class="form-input" type="number" id="loanAmount" name="loanAmount">
+		
+		<label class="form-label" for="paymentPerson">Person to Pay</label>
+		<select class="form-input" id="paymentPerson" name="paymentPerson">
+			<option value="loan">Bank</option>
+			<option value="loan">Oakes</option>
+			<option value="loan">Athena</option>
+		</select>
+		
+		<label class="form-label" for="utilityAmount">Amount of Utilities to Pay</label>
+		<input required class="form-input" type="number" id="utilityAmount" name="utilityAmount">
+		
+		<label class="form-label" for="payUtility">Utility to Pay</label>
+		<select class="form-input" id="payUtility" name="payUtility">
+			<option value="payment">Electricity</option>
+			<option value="payment">Internet</option>
+			<option value="payment">Water</option>
+			<option value="payment">Food</option>
+		</select>
+		
+	<br> <br>
+	
+		<h2 class="form-header">Total Income Earned</h2>
+		
+		<label class="form-label" for="grossIncome">Gross Income</label>
+		<input required class="form-input" type="number" id="grossIncome" name="grossIncome">
+		
+		<label class="form-label" for="totalExpense">Total Expense</label>
+		<input required class="form-input" type="number" id="totalExpense" name="totalExpense">
+		
+		<label class="form-label" for="netIncome">Net Income</label>
+		<input required class="form-input" type="number" id="netIncome" name="netIncome">
+		
+		<button class="form-button" type="submit">Submit</button>
+	</form>
+</body>
+</html>

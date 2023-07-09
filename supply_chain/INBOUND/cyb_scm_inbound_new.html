@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>Supply Inbound Form</title>
+	<link rel="stylesheet" type="text/css" href="cyb_scm_inbound_style.css">
+	
+</head>
+<body>
+  
+  <div class="bgimg_remove">
+	<form class="form-container" action="cyb_scm_inbound_result.php" method="POST">
+	  
+	  <h2 class="form-header">Supplier Information</h2>
+		<br>
+		
+		<label class="form-label">Supplier Name : </label>
+		<select class="form-input" id="name" name="name" onchange="updateInfo()">
+		  <option value="none">--Select Name--</option>
+			<option value="Rejay Buta">Rejay Buta</option>
+			<option value="Daniel Mendoza">Daniel Mendoza</option>
+			<option value="Jamil Mariano">Jamil Mariano</option>
+		</select>
+		<br>
+     
+		<label class="form-label"> Address : </label>
+		<input type="text" id="address" name="address" class="form-input" placeholder="Select a Supplier first . . ." required>
+
+		<label class="form-label"> Contact Info : </label>
+		<input type="number" name="contactinfo" id="contactinfo" class="form-input" placeholder="Select a Supplier first . . . ">
+	<br>
+	
+	<h2 class="form-header">Inbound Transaction</h2>
+		
+		<label class="form-label"> Product Type : </label>
+		<select class="form-input" id="productTp" name="productTp" onchange="updateItems()">
+		  <option value="none">--Select a Product Here--</option>
+			<option value="Motherboard">Motherboard</option>
+			<option value="Processor">Processor</option>
+			<option value="RAM">RAM</option>
+		</select>
+		<br>
+		
+		<label class="form-label"> Item : </label>
+		<select class="form-input" name="productname" id="productname">
+		  <option value="none">
+		    --Go Select a Product first--
+		  </option>
+		</select>
+		<br>
+		  
+		<label class="form-label"> Quantities : </label>
+		<input type="number" name="quantity" id="quantity" class="form-input" placeholder="Units.." required>
+		<br>
+		  
+		<label class="form-label"> Amount : </label>
+		<input type="number" name="amount" class="form-input" id="amount" placeholder="Amount Paid.." required>
+		<br>
+		  
+		<label class="form-label"> Ordered By : </label>
+		
+		<select class="form-input" name="orderedBy" id="orderedBy" required>
+		  <option value="Austin Moreno">
+		    Austin Moreno
+		  </option>
+		  <option value="David Olidan">
+		    David Olidan
+		  </option>
+		  <option value="Jayron Manay">
+		    Jayron Manay
+		  </option>
+		</select>
+		<br>
+		
+    <label class="form-label"> Mode of Payment : </label>
+      <select class="form-input" id="paymentM" name="paymentM">
+        <option value="Cash"> Cash </option>
+        <option value="Cheque"> Cheque </option>
+        <option value="E-Wallet"> E-Wallet</option>	
+      </select>
+	  <br>
+	  
+	  <label class="form-label"> Transaction Date : </label>
+		<input type="date" name="transDate" class="form-input" required>
+		<br>
+	  
+	  <input type="submit" class="form-button" id="submit" name="submit" value="Submit">
+	  
+	  </form>
+	 
+	</div>
+	  
+	    <script src="cyb_scm_inbound_script.js"> </script>
+
+</body>
+</html>
