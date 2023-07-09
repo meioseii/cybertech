@@ -8,54 +8,72 @@
 </head>
 <body>
   
-  <div class="bgimg_remove">
-	<form class="form-container" action="cyb_scm_inventory_result.php" method="POST">
-	  
-	  <h2 class="form-header"> ADD ITEM </h2>
-		<br>
-		
-		<label class="form-label"> Classification : </label>
-		<select class="form-input" id="classification" name="classification"
-		onchange="updateBrand()">
-		  <option value="none">--Select Classification here--</option>
-			<option value="Motherboard">Motherboard</option>
-			<option value="Processor">Processor</option>
-			<option value="RAM">RAM</option>
-		</select>
-		<br>
-     
-		<label class="form-label"> Brand : </label>
-		<select class="form-input" id="brand" name="brand" onchange="updateItem()">
-		  <option value="none">--Select Product first--</option>
-		</select>
+	<div class="navbar">
+		<div class="navbar--logo">
+			<img class="company--logo" src="icon.png" alt="">
+			<div onClick="window.location.href='#'" class="company--name">CyberTech</div>
+		</div>
+		<ul class="navbar--links">
+			<li class="login" id="logout">Logout</li>
+		</ul>
 
-		<label class="form-label"> Item Name : </label>
-		<select class="form-input" id="itemName" name="itemName">
-		  <option value="none">--Select Brand first--</option>
-		</select>
-	<br>
-	
-		<label class="form-label"> Units : </label>
-		<select class="form-input" id="units" name="units">
-			<option value="pc">pc</option>
-		</select>
+	</div>
+
+	<div class="bgimg_remove">
+		<form class="form-container" action="cyb_scm_inventory_result.php" method="POST">
+		
+		<h2 class="form-header"> ADD ITEM </h2>
+			<br>
+			
+			<label class="form-label"> Classification : </label>
+			<select class="form-input" id="classification" name="classification"
+			onchange="updateBrand()">
+			<option value="none">--Select Classification here--</option>
+				<option value="Motherboard">Motherboard</option>
+				<option value="Processor">Processor</option>
+				<option value="RAM">RAM</option>
+			</select>
+			<br>
+		
+			<label class="form-label"> Brand : </label>
+			<select class="form-input" id="brand" name="brand" onchange="updateItem()">
+			<option value="none">--Select Product first--</option>
+			</select>
+
+			<label class="form-label"> Item Name : </label>
+			<select class="form-input" id="itemName" name="itemName">
+			<option value="none">--Select Brand first--</option>
+			</select>
 		<br>
 		
-		<label class="form-label"> Stocks : </label>
-		<input type="number" name="stocks" id="stocks" class="form-input" placeholder="Enter Stocks here . . .">
-		<br>
-		  
-		<label class="form-label"> Item Cost : </label>
-		<input type="number" name="itemCost" id="itemCost" class="form-input" placeholder="Enter Cost here . . . " required>
-		<br>
-	  
-	  <input type="submit" class="form-button" id="submit" name="submit" value="Submit">
-	  
-	  </form>
+			<label class="form-label"> Units : </label>
+			<select class="form-input" id="units" name="units">
+				<option value="pc">pc</option>
+			</select>
+			<br>
+			
+			<label class="form-label"> Stocks : </label>
+			<input type="number" name="stocks" id="stocks" class="form-input" placeholder="Enter Stocks here . . .">
+			<br>
+			
+			<label class="form-label"> Item Cost : </label>
+			<input type="number" name="itemCost" id="itemCost" class="form-input" placeholder="Enter Cost here . . . " required>
+			<br>
+		
+		<input type="submit" class="form-button" id="submit" name="submit" value="Submit">
+		
+		</form>
 	 
 	</div>
 	  
-	    <script src="cyb_scm_outbound_script.js"> </script>
+	<script src="cyb_scm_outbound_script.js"> </script>
+	<script>
+        const logout = document.getElementById('logout');
+
+    logout.addEventListener('click', () => {
+        confirm("Are you sure you want to logout?") ? window.location.href = '../../index.html' : null;
+    })
+    </script>
 
 </body>
 </html>
