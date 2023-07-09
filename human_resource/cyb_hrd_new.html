@@ -9,6 +9,16 @@
 
 </head>
 <body>
+    <div class="navbar">
+        <div class="navbar--logo">
+            <img class="company--logo" src="icon.png" alt="">
+            <div onClick="window.location.href='#'" class="company--name">CyberTech</div>
+        </div>
+        <ul class="navbar--links">
+            <li class="login" id="logout">Logout</li>
+        </ul>
+
+    </div>
   
     <form class="base" action="cyb_hrd_result.php" method="post">
         <h1 class="info">Human Resource</h1> 
@@ -74,5 +84,13 @@
     
     
 </form>
+
+    <script>
+        const logout = document.getElementById('logout');
+
+    logout.addEventListener('click', () => {
+        confirm("Are you sure you want to logout?") ? window.location.href = '../index.html' : null;
+    })
+    </script>
 </body>
 </html>

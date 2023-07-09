@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Karla&family=Orbitron:wght@900&display=swap');
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -5,6 +7,60 @@
 }
 
 /* Form container */ 
+
+.navbar {
+    color: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+.navbar--logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar--logo:hover {
+    cursor: pointer;
+}
+
+.navbar--logo .company--logo {
+    height: 4em;
+    width: 4em;
+    padding: 1em;
+}
+
+.navbar--logo .company--name {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.navbar--links {
+    list-style-type: none;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin: 0;
+    cursor: pointer;
+    margin-right: 16px;
+}
+
+.navbar--links li {
+    transition: 0.7s ease;
+    margin-right: 12px;
+}
+
+.navbar--links li:hover {
+    transform: scale(1.1);
+    color: #FCA311;
+}
+
 
 body {
     background-image: url("bg-img.jpg");
